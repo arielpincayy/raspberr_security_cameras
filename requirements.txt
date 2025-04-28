@@ -1,2 +1,6 @@
 picamera2
 pyserial
+lmxl
+requests
+mariadb-server
+mysql-connector-python
