@@ -1,6 +1,6 @@
 picamera2
 pyserial
-lmxl
+lxml
 requests
 mariadb-server
 mysql-connector-python
