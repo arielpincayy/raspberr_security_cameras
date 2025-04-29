@@ -15,6 +15,7 @@ if __name__ == "__main__":
         REC_TIME = 10
 
 picam = Picamera2()
+space = 1
 # Conecta al Arduino por serial
 arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 time.sleep(1)
@@ -45,8 +46,8 @@ def tomar_foto():
     print(f'Foto {filename} guardad exitosamente. Viva el idolosh!!')
 
     # Insertar foto en la base de datos
-    sql = "INSERT INTO eventos (id, timestamp, lugar, tipo, filename) VALUES (%s, %s, %s, %s, %s)"
-    val = (id, timestamp, lugar, "foto", filename)
+    sql = "INSERT INTO eventos (id, timestamp, lugar, tipo, filename, reported, space) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    val = (id, timestamp, lugar, "foto", filename, False, space)
     cursor.execute(sql, val)
     db.commit()
 
@@ -66,8 +67,8 @@ def tomar_foto():
     print(f'Video {filename2} guardado exitosamente. Viva el idolosh!!')
 
     # Insertar video en la base de datos
-    sql = "INSERT INTO eventos (id, timestamp, lugar, tipo, filename) VALUES (%s, %s, %s, %s, %s)"
-    val = (f"{id}_video", timestamp, lugar, "video", filename2)
+    sql = "INSERT INTO eventos (id, timestamp, lugar, tipo, filename, reported, space) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    val = (f"{id}_video", timestamp, lugar, "video", filename2, False, space)
     cursor.execute(sql, val)
     db.commit()
 
