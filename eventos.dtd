@@ -1,7 +1,0 @@
-<!ELEMENT eventos (evento+)>
-<!ELEMENT evento (id, timestamp, lugar, tipo, filename)>
-<!ELEMENT id (#PCDATA)>
-<!ELEMENT timestamp (#PCDATA)>
-<!ELEMENT lugar (#PCDATA)>
-<!ELEMENT tipo (#PCDATA)>
-<!ELEMENT filename (#PCDATA)>
