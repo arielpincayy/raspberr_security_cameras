@@ -56,7 +56,7 @@ const DashboardLayout = () => {
         <div className="h-16 flex items-center justify-between px-4 border-b border-border">
           <div className="flex items-center space-x-2">
             <Shield className="h-6 w-6 text-primary" />
-            <span className="text-lg font-semibold">SecureView</span>
+            <span className="text-lg font-semibold">RaspSex</span>
           </div>
           <button 
             className="lg:hidden text-muted-foreground hover:text-foreground" 
