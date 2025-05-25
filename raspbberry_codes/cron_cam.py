@@ -12,7 +12,7 @@ INTERVAL = int(sys.argv[4])
 
 VENV_PYTHON = "/home/ariel/Desktop/raspsec/.venv/bin/python3"
 SCRIPT_PATH = "/home/ariel/Desktop/raspsec/take_event.py"
-LOG_PATH = "/home/ariel/Desktop/raspsec/cron_log.txt"
+LOG_PATH = "/home/ariel/Desktop/raspsec/cam_logs.txt"
 
 
 cron = CronTab(user=True)
