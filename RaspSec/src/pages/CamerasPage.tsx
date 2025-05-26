@@ -1,27 +1,73 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Search, Filter, ChevronDown, ChevronUp, X, Camera as CameraIcon } from 'lucide-react';
-import { mockCameras, filterCameras } from '../data/mockCameras';
+import { mockCameras } from '../data/mockCameras';
 import { Camera } from '../types';
 import { useAlert } from '../contexts/AlertContext';
+import CameraStream from '../components/ui/CameraStream';
+
+// Tiempo en milisegundos para marcar como offline si el archivo no cambia
+const OFFLINE_TIMEOUT_MS = 8000;
+const HEARTBEAT_INTERVAL_MS = 5000;
 
 const CameraCard = ({ camera }: { camera: Camera }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  
+
+  // Estado para controlar si la cámara está online (usando heartbeat)
+  const [isOnline, setIsOnline] = useState(camera.status === 'online');
+  const [lastModified, setLastModified] = useState<Date | null>(null);
+
+  // Heartbeat para checar si el stream sigue activo
+  useEffect(() => {
+    let interval: ReturnType<typeof setInterval>;
+    let abortController = new AbortController();
+
+    const checkHeartbeat = async () => {
+      try {
+        const res = await fetch(camera.streamUrl, { method: 'HEAD', signal: abortController.signal });
+        const dateStr = res.headers.get('Last-Modified');
+        if (dateStr) {
+          const modDate = new Date(dateStr);
+          if (!lastModified || modDate > lastModified) {
+            setLastModified(modDate);
+            setIsOnline(true);
+          } else {
+            // Si no ha cambiado en más de OFFLINE_TIMEOUT_MS, marcamos como offline
+            if (Date.now() - modDate.getTime() > OFFLINE_TIMEOUT_MS) {
+              setIsOnline(false);
+            }
+          }
+        } else {
+          setIsOnline(false);
+        }
+      } catch (e) {
+        setIsOnline(false);
+      }
+    };
+
+    // Corre inmediatamente y luego cada X segundos
+    checkHeartbeat();
+    interval = setInterval(checkHeartbeat, HEARTBEAT_INTERVAL_MS);
+
+    return () => {
+      clearInterval(interval);
+      abortController.abort();
+    };
+    // eslint-disable-next-line
+  }, [camera.streamUrl, lastModified]);
+
   const toggleFullscreen = () => {
     setIsFullscreen(!isFullscreen);
   };
-  
-  const statusColor = camera.status === 'online' ? 'bg-success' : 'bg-destructive';
-  const statusText = camera.status === 'online' ? 'Online' : 'Offline';
-  
+
+  const statusColor = isOnline ? 'bg-success' : 'bg-destructive';
+  const statusText = isOnline ? 'Online' : 'Offline';
+
   return (
-    <div 
-      className={`${isFullscreen ? 'fixed inset-0 z-50 p-4 bg-background' : 'relative'}`}
-    >
+    <div className={`${isFullscreen ? 'fixed inset-0 z-50 p-4 bg-background' : 'relative'}`}>
       {isFullscreen && (
         <div className="absolute top-4 right-4 z-10">
-          <button 
+          <button
             className="btn btn-destructive"
             onClick={toggleFullscreen}
           >
@@ -29,25 +75,26 @@ const CameraCard = ({ camera }: { camera: Camera }) => {
           </button>
         </div>
       )}
-      
-      <div 
+
+      <div
         className={`bg-card rounded-lg border border-border overflow-hidden ${isFullscreen ? 'h-full' : ''}`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="relative">
-          {/* Camera feed */}
-          <div 
-            className={`relative ${isFullscreen ? 'h-full' : 'h-[200px]'}`}
-          >
-            <img 
-              src={camera.imageUrl} 
-              alt={camera.name}
-              className={`w-full h-full object-cover ${camera.status === 'offline' ? 'grayscale opacity-70' : ''}`}
-            />
-            
+          <div className={`relative ${isFullscreen ? 'h-full' : 'h-[200px]'}`}>
+            {isOnline && camera.streamUrl ? (
+              <CameraStream
+                src={camera.streamUrl}
+              />
+            ) : (
+              <div className="w-full h-full bg-black flex items-center justify-center text-white opacity-60">
+                Offline
+              </div>
+            )}
+
             {/* Simulate live feed */}
-            {camera.status === 'online' && (
+            {isOnline && (
               <div className="absolute top-3 left-3 px-2 py-1 bg-black/60 rounded-md text-white text-xs flex items-center">
                 <span className="relative flex h-2 w-2 mr-1">
                   <span className={`animate-ping absolute inline-flex h-full w-full rounded-full ${statusColor} opacity-75`}></span>
@@ -56,21 +103,20 @@ const CameraCard = ({ camera }: { camera: Camera }) => {
                 LIVE
               </div>
             )}
-            
+
             {/* Status overlay */}
             <div className="absolute top-3 right-3 px-2 py-1 bg-black/60 rounded-md text-white text-xs flex items-center">
               <span className={`inline-block w-2 h-2 rounded-full mr-1 ${statusColor}`}></span>
               {statusText}
             </div>
-            
+
             {/* Camera info overlay */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
               <h3 className="text-white font-medium truncate">{camera.name}</h3>
               <p className="text-white/80 text-sm truncate">{camera.ipAddress}</p>
             </div>
           </div>
-          
-          {/* Controls overlay */}
+
           {(isHovered || isFullscreen) && (
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
               <button
@@ -81,9 +127,8 @@ const CameraCard = ({ camera }: { camera: Camera }) => {
               </button>
             </div>
           )}
-          
-          {/* Connection lost message */}
-          {camera.status === 'offline' && (
+
+          {!isOnline && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/40">
               <div className="bg-card p-4 rounded-md max-w-xs text-center">
                 <CameraIcon className="h-8 w-8 text-destructive mx-auto mb-2" />
@@ -95,7 +140,7 @@ const CameraCard = ({ camera }: { camera: Camera }) => {
             </div>
           )}
         </div>
-        
+
         {!isFullscreen && (
           <div className="p-3 border-t border-border">
             <div className="flex items-center justify-between">
@@ -125,81 +170,50 @@ const CamerasPage = () => {
   const [selectedStatus, setSelectedStatus] = useState<'online' | 'offline' | ''>('');
   const [selectedLocation, setSelectedLocation] = useState('');
   const { showAlert } = useAlert();
-  
-  // Get unique locations
+
   const locations = Array.from(new Set(mockCameras.map(c => c.location)));
-  
+
   useEffect(() => {
-    // Simulate API fetch
     const fetchCameras = async () => {
       setLoading(true);
-      
+
       try {
-        // Simulate network delay
         await new Promise(resolve => setTimeout(resolve, 800));
-        
-        // Apply filters
-        const filteredCameras = filterCameras(
-          searchTerm,
-          selectedStatus || undefined,
-          selectedLocation || undefined
-        );
-        
+        let filteredCameras = mockCameras.filter(cam => {
+          let matches = true;
+          if (searchTerm) {
+            matches = matches && (
+              cam.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              cam.location.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+          }
+          if (selectedStatus) {
+            matches = matches && cam.status === selectedStatus;
+          }
+          if (selectedLocation) {
+            matches = matches && cam.location === selectedLocation;
+          }
+          return matches;
+        });
         setCameras(filteredCameras);
       } catch (error) {
-        showAlert({ 
-          type: 'error', 
-          message: 'Failed to load cameras. Please try again.' 
+        showAlert({
+          type: 'error',
+          message: 'Failed to load cameras. Please try again.'
         });
       } finally {
         setLoading(false);
       }
     };
-    
+
     fetchCameras();
-    
-    // Simulate camera status changes
-    const interval = setInterval(() => {
-      const updatedCameras = [...mockCameras];
-      const randomIndex = Math.floor(Math.random() * updatedCameras.length);
-      
-      // 10% chance of changing status
-      if (Math.random() < 0.1) {
-        const camera = updatedCameras[randomIndex];
-        camera.status = camera.status === 'online' ? 'offline' : 'online';
-        camera.connectionLost = camera.status === 'offline' ? new Date() : null;
-        
-        // Apply filters to the updated cameras
-        const filteredCameras = filterCameras(
-          searchTerm,
-          selectedStatus || undefined,
-          selectedLocation || undefined
-        );
-        
-        setCameras(filteredCameras);
-        
-        if (camera.status === 'offline') {
-          showAlert({ 
-            type: 'warning', 
-            message: `Camera ${camera.name} went offline. Attempting to reconnect...` 
-          });
-        } else {
-          showAlert({ 
-            type: 'success', 
-            message: `Camera ${camera.name} is back online.` 
-          });
-        }
-      }
-    }, 20000); // Every 20 seconds
-    
-    return () => clearInterval(interval);
-  }, [searchTerm, selectedStatus, selectedLocation]);
-  
+  }, [searchTerm, selectedStatus, selectedLocation, showAlert]);
+
   const handleClearFilters = () => {
     setSelectedStatus('');
     setSelectedLocation('');
   };
-  
+
   const onlineCount = cameras.filter(c => c.status === 'online').length;
   const totalCameras = cameras.length;
   const activeFiltersCount = [selectedStatus, selectedLocation].filter(Boolean).length;
@@ -212,9 +226,8 @@ const CamerasPage = () => {
           {onlineCount} of {totalCameras} cameras online
         </p>
       </div>
-      
+
       <div className="mb-6 flex flex-col sm:flex-row gap-4">
-        {/* Search */}
         <div className="relative flex-grow">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <Search className="h-5 w-5 text-muted-foreground" />
@@ -227,8 +240,6 @@ const CamerasPage = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-        
-        {/* Filter toggle */}
         <button
           className="btn btn-secondary flex items-center gap-2"
           onClick={() => setShowFilters(!showFilters)}
@@ -243,8 +254,7 @@ const CamerasPage = () => {
           {showFilters ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
         </button>
       </div>
-      
-      {/* Filters panel */}
+
       {showFilters && (
         <div className="mb-6 bg-card border border-border rounded-lg p-4">
           <div className="flex justify-between items-center mb-4">
@@ -257,9 +267,8 @@ const CamerasPage = () => {
               Clear all
             </button>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Status */}
             <div>
               <label className="block text-sm font-medium mb-1">Status</label>
               <select
@@ -272,8 +281,6 @@ const CamerasPage = () => {
                 <option value="offline">Offline</option>
               </select>
             </div>
-            
-            {/* Location */}
             <div>
               <label className="block text-sm font-medium mb-1">Location</label>
               <select
@@ -290,8 +297,7 @@ const CamerasPage = () => {
           </div>
         </div>
       )}
-      
-      {/* Camera grid */}
+
       {loading ? (
         <div className="flex justify-center items-center p-12">
           <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>

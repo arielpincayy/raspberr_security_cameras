@@ -40,7 +40,9 @@ export interface Camera {
   imageUrl: string;
   ipAddress: string;
   connectionLost: Date | null;
+  streamUrl: string; // <--- AGREGA ESTA LÍNEA
 }
+
 
 export interface AlertProps {
   type: 'info' | 'success' | 'warning' | 'error';
