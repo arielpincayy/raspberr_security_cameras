@@ -1,6 +1,0 @@
-picamera2
-pyserial
-lxml
-requests
-mariadb-server
-mysql-connector-python
