@@ -8,12 +8,9 @@ from picamera2.encoders import H264Encoder
 from picamera2.outputs import FileOutput
 
 from sqlalchemy import create_engine, Column, String, Integer, DateTime, Boolean
-from sqlalchemy.orm import declarative_base, sessionmaker
+from db_config import Base, get_session
 
-# ========== CONFIGURACIÓN DE BASE DE DATOS ==========
-DATABASE_URL = "cockroachdb://root@192.168.137.51:26257/raspsec?sslmode=disable"
-engine = create_engine(DATABASE_URL)
-Base = declarative_base()
+session = get_session()
 
 class Evento(Base):
     __tablename__ = 'eventos'
@@ -25,9 +22,8 @@ class Evento(Base):
     reported = Column(Boolean, default=False)
     space = Column(Integer, default=1)
 
-Base.metadata.create_all(engine)
-Session = sessionmaker(bind=engine)
-session = Session()
+
+Base.metadata.create_all(bind=session.get_bind())
 
 # ========== FUNCIÓN PARA REGISTRAR EVENTO ==========
 def registrar_evento(tipo, filename, timestamp, id):
