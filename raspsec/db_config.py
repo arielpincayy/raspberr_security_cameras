@@ -16,9 +16,8 @@ def get_local_ip():
     return ip
 
 local_ip = get_local_ip()
-num_ip = local_ip.split('.')[-1]
 
-DATABASE_URL = f"cockroachdb://root@{num_ip}:26257/raspsec?sslmode=disable"
+DATABASE_URL = f"cockroachdb://root@{local_ip}:26257/raspsec?sslmode=disable"
 
 engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
