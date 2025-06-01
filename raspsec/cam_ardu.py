@@ -15,6 +15,7 @@ PLACE = sys.argv[3]
 # Conecta al Arduino por serial
 arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 time.sleep(1)
+print("Escuchando sensor...")
 
 # ========== LOOP PRINCIPAL ==========
 while True:

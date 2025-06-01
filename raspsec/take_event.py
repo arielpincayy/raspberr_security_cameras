@@ -9,7 +9,7 @@ from picamera2.outputs import FileOutput
 from models import Evento
 from sqlalchemy import create_engine, Column, String, Integer, DateTime, Boolean
 from db_config import Base, get_session
-from getuser import get_system_user
+import getpass
 
 # ========== SESIÓN Y ARGUMENTOS ==========
 session = get_session()
@@ -18,7 +18,7 @@ rec_time = int(sys.argv[1])
 space = int(sys.argv[2])
 place = sys.argv[3]
 
-usrname = get_system_user()
+usrname = getpass.getuser()
 
 Base.metadata.create_all(bind=session.get_bind())
 
