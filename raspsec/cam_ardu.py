@@ -3,12 +3,18 @@ import subprocess
 import sys
 import time
 
+
+if len(sys.argv) < 4:
+    print('Uso: python script.py <rec_time> <space> <usrname>')
+    sys.exit(1)
+
+REC_TIME = int(sys.argv[1]) if len(sys.argv) > 1 else 10
+SPACE = int(sys.argv[2])
+PLACE = sys.argv[3]
+
 # Conecta al Arduino por serial
 arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 time.sleep(1)
-
-if __name__ == "__main__":
-    REC_TIME = int(sys.argv[1]) if len(sys.argv) > 1 else 10
 
 # ========== LOOP PRINCIPAL ==========
 while True:
@@ -21,7 +27,7 @@ while True:
             with open("cam_logs.txt", "a") as log_file:
                 try:
                     subprocess.run(
-                        ["python3", "take_event.py", str(REC_TIME)],
+                        ["python3", "take_event.py", str(REC_TIME), str(SPACE), str(PLACE)],
                         check=True,
                         stdout=log_file,
                         stderr=log_file

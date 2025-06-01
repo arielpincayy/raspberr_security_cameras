@@ -2,24 +2,21 @@ import requests
 from sqlalchemy import create_engine, Column, String, Integer, DateTime, Boolean
 from sqlalchemy.orm import declarative_base, sessionmaker
 from db_config import Base, get_session
+from models import Evento
+import sys
+
+if len(sys.argv) < 2:
+    print("Uso: python send_events.py <ip_server>")
+    sys.exit(1)
+
+ip_server = sys.argv[1]
 
 session = get_session()
-
-# Modelo de la tabla
-class Evento(Base):
-    __tablename__ = 'eventos'
-    id = Column(String(50), primary_key=True)
-    timestamp = Column(DateTime, nullable=False)
-    lugar = Column(String(100), nullable=False)
-    tipo = Column(String(10), nullable=False)
-    filename = Column(String(255), nullable=True)
-    reported = Column(Boolean, default=False)
-    space = Column(Integer, default=1)
 
 Base.metadata.create_all(bind=session.get_bind())
 
 # URL del servidor al que quieres enviar los datos
-API_ENDPOINT = "http://192.168.137.144:8000/api/eventos/"  # ← cambia esto
+API_ENDPOINT = f"http://{ip_server}:8000/api/eventos/"  # ← cambia esto
 
 # Obtener eventos no reportados
 eventos = session.query(Evento).filter_by(reported=False).all()

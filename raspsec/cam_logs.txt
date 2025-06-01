@@ -34,3 +34,567 @@ Foto guardada: /home/ariel/Desktop/raspsec/files/photo_2025-05-25_16-54-35.jpg
 Evento 'foto' registrado: files/photo_2025-05-25_16-54-35.jpg
 Video guardado: /home/ariel/Desktop/raspsec/files/video_2025-05-25_16-54-35.h264
 Evento 'video' registrado: files/video_2025-05-25_16-54-35.h264
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ariel/Desktop/raspsec/take_event.py", line 12, in <module>
+    from getuser import get_system_user
+ModuleNotFoundError: No module named 'getuser'
+ERROR al ejecutar take_event.py: Command '['python3', 'take_event.py', '10', '2', 'Aula2']' returned non-zero exit status 1.

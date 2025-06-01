@@ -6,43 +6,39 @@ from datetime import datetime
 from picamera2 import Picamera2
 from picamera2.encoders import H264Encoder
 from picamera2.outputs import FileOutput
-
+from models import Evento
 from sqlalchemy import create_engine, Column, String, Integer, DateTime, Boolean
 from db_config import Base, get_session
+from getuser import get_system_user
 
+# ========== SESIÓN Y ARGUMENTOS ==========
 session = get_session()
 
-class Evento(Base):
-    __tablename__ = 'eventos'
-    id = Column(String(50), primary_key=True)
-    timestamp = Column(DateTime, nullable=False)
-    lugar = Column(String(100), nullable=False)
-    tipo = Column(String(10), nullable=False)
-    filename = Column(String(255), nullable=True)
-    reported = Column(Boolean, default=False)
-    space = Column(Integer, default=1)
+rec_time = int(sys.argv[1])
+space = int(sys.argv[2])
+place = sys.argv[3]
 
+usrname = get_system_user()
 
 Base.metadata.create_all(bind=session.get_bind())
 
-# ========== FUNCIÓN PARA REGISTRAR EVENTO ==========
-def registrar_evento(tipo, filename, timestamp, id):
+# ========== FUNCIONES ==========
+def registrar_evento(tipo, filename, timestamp, id, space, place):
     evento = Evento(
         id=id,
         timestamp=timestamp,
-        lugar="Aula 2",
+        lugar=place,
         tipo=tipo,
         filename=filename,
         reported=False,
-        space=2
+        space=space
     )
     session.add(evento)
     session.commit()
     print(f"Evento '{tipo}' registrado: {filename}")
 
-# ========== FUNCIÓN PRINCIPAL ==========
-def take_event(rec_time):
-    output_folder = "/home/ariel/Desktop/raspsec/files"
+def take_event(rec_time, space, place):
+    output_folder = f"/home/{usrname}/Desktop/raspsec/files"
     os.makedirs(output_folder, exist_ok=True)
 
     try:
@@ -58,11 +54,11 @@ def take_event(rec_time):
 
         timestamp = datetime.now()
         uid = str(uuid.uuid4())
-        path_name_ref = f'photo_{timestamp.strftime("%Y-%m-%d_%H-%M-%S")}.jpg'
-        foto_filename = os.path.join(output_folder, path_name_ref)
-        picam.capture_file(foto_filename)
-        print(f"Foto guardada: {foto_filename}")
-        registrar_evento("foto", f'files/{path_name_ref}', timestamp, uid)
+        photo_name = f'photo_{timestamp.strftime("%Y-%m-%d_%H-%M-%S")}.jpg'
+        foto_path = os.path.join(output_folder, photo_name)
+        picam.capture_file(foto_path)
+        print(f"Foto guardada: {foto_path}")
+        registrar_evento("foto", f'files/{photo_name}', timestamp, uid, space, place)
 
         picam.stop()
         time.sleep(1)
@@ -74,17 +70,17 @@ def take_event(rec_time):
         picam.configure(picam.create_video_configuration())
         picam.start()
         time.sleep(1)
-        
-        path_name_ref = f'video_{timestamp.strftime("%Y-%m-%d_%H-%M-%S")}.h264'
-        video_filename = os.path.join(output_folder, f'video_{timestamp.strftime("%Y-%m-%d_%H-%M-%S")}.h264')
+
+        video_name = f'video_{timestamp.strftime("%Y-%m-%d_%H-%M-%S")}.h264'
+        video_path = os.path.join(output_folder, video_name)
         encoder = H264Encoder()
-        output = FileOutput(video_filename)
+        output = FileOutput(video_path)
         picam.start_recording(encoder, output)
         time.sleep(rec_time)
         picam.stop_recording()
-        print(f"Video guardado: {video_filename}")
+        print(f"Video guardado: {video_path}")
 
-        registrar_evento("video", f'files/{path_name_ref}', timestamp, f"{uid}_video")
+        registrar_evento("video", f'files/{video_name}', timestamp, f"{uid}_video", space, place)
 
         picam.stop()
     except Exception as e:
@@ -93,5 +89,4 @@ def take_event(rec_time):
 
 # ========== MAIN ==========
 if __name__ == "__main__":
-    rec_time = int(sys.argv[1]) if len(sys.argv) > 1 else 10
-    take_event(rec_time)
+    take_event(rec_time, space, place)
