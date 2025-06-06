@@ -77,8 +77,6 @@ Modifica el archivo config.txt para configurar los parametros iniciales del sist
 
     Transmisión en vivo vía RTSP o HLS.
 
-    Panel web para revisar evidencias.
-
     Integración con servidor central para clúster de cámaras.
 
 ## 🧠 Créditos
